@@ -93,4 +93,5 @@ typings/
 
 # End of https://www.gitignore.io/api/node
 
+# Output dir
 /lib

@@ -3,9 +3,6 @@ import RectPart from "./primitives/RectPart";
 import {RAIL_PART_WIDTH} from "constants";
 import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
-
-import 'lodash.combinations';
-import 'lodash.product';
 import Gap from "./Gap";
 
 

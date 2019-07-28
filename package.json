@@ -2,7 +2,10 @@
   "name": "react-rail-components",
   "version": "0.0.1",
   "description": "rail components",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
