@@ -1,0 +1,32 @@
+{
+  "name": "react-rail-components",
+  "version": "0.0.1",
+  "description": "rail components",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/railroad-editor/react-rail-components.git"
+  },
+  "author": "Tomohiko Ozawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/railroad-editor/react-rail-components/issues"
+  },
+  "homepage": "https://github.com/railroad-editor/react-rail-components#readme",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.5",
+    "lodash": "^4.17.15",
+    "paper": "https://github.com/railroad-editor/paper.js#dist",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-paper-bindings": "https://github.com/railroad-editor/react-paper-bindings#dist"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["esnext", "es6", "dom"],
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib",
+    "jsx": "react",
+    "baseUrl": "src"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}
+
