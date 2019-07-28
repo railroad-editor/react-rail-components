@@ -118,11 +118,6 @@ paper@^0.11.8:
   resolved "https://registry.yarnpkg.com/paper/-/paper-0.11.8.tgz#c395269e23e3bb456c9f9e88a2f87f4421bfef23"
   integrity sha512-3O5o8SntwieIlBmHjWS4hAYESiZ0yb++Outz9Rr5AN/ZFK7jfVGLANjqyIvEKIpGMImf2fQCkW64n8dkYheP5g==
 
-paper@^0.12.3:
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/paper/-/paper-0.12.3.tgz#7274a31c17b8998ab0d98207fcf25a8f25f4c18d"
-  integrity sha512-MBlJ0xKFkU/K0eTk2VoAlNbqbfp7MJMVw7gF6v0pveXrBXrJ+1842YLTm07jjjbVJaQZnLvtecDf6Mbazc3jig==
-
 "paper@https://github.com/railroad-editor/paper.js#dist":
   version "0.12.3"
   resolved "https://github.com/railroad-editor/paper.js#236d699836892295b4dacb73504e043614331140"

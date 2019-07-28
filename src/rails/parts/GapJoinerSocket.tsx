@@ -6,7 +6,7 @@ import {
   GAP_JOINER_SOCKET_DETECTION_OPACITY_RATE,
   GAP_JOINER_SOCKET_FILL_COLORS,
   GAP_JOINER_SOCKET_HIT_RADIUS
-} from "constants";
+} from "../../constants";
 
 import PartGroup from "./primitives/PartGroup";
 

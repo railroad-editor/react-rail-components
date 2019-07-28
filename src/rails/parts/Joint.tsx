@@ -9,7 +9,7 @@ import {
   JOINT_HEIGHT,
   JOINT_HIT_RADIUS,
   JOINT_WIDTH
-} from "constants";
+} from "../../constants";
 import RectPart from "./primitives/RectPart";
 
 

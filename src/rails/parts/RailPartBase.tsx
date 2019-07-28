@@ -1,13 +1,11 @@
 import * as React from "react";
-import {Point} from "paper";
 import {RailPartMeta} from "./types";
 import {Pivot} from "./primitives/PartBase";
 
-import {normAngle} from "rails/utils";
+import {normAngle} from "../utils";
 import {FlowDirections} from "../RailBase";
 import PartGroup from "./primitives/PartGroup";
-import {RAIL_PART_WIDTH} from "constants";
-
+import {RAIL_PART_WIDTH} from "../../constants";
 
 
 export interface PivotInfo {

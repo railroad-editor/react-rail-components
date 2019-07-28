@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Group, Item, Path} from "paper";
 import {Path as PathComponent} from "react-paper-bindings";
-import {ANIMATION_FLOW_COLOR_1, ANIMATION_FLOW_COLOR_2} from "constants";
+import {ANIMATION_FLOW_COLOR_1, ANIMATION_FLOW_COLOR_2} from "../../../constants";
 
 export enum Pivot {
   CENTER = 'Center',

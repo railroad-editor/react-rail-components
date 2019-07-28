@@ -1,7 +1,7 @@
 import * as React from "react";
 import RectPart from "./primitives/RectPart";
 
-import {GAP_FILL_COLOR, GAP_HEIGHT, GAP_WIDTH} from "constants";
+import {GAP_FILL_COLOR, GAP_HEIGHT, GAP_WIDTH} from "../../constants";
 
 
 

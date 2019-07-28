@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import TrianglePart from "./primitives/TrianglePart";
-import {FEEDER_HEIGHT, FEEDER_SOCKET_FILL_COLORS, FEEDER_WIDTH} from "constants";
+import {FEEDER_HEIGHT, FEEDER_SOCKET_FILL_COLORS, FEEDER_WIDTH} from "../../constants";
 import {FlowDirection, Pivot} from "./primitives/PartBase";
 
 

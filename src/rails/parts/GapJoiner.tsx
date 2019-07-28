@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Pivot} from "./primitives/PartBase";
-import {GAP_JOINER_HEIGHT, GAP_JOINER_SOCKET_FILL_COLORS, GAP_JOINER_WIDTH} from "constants";
+import {GAP_JOINER_HEIGHT, GAP_JOINER_SOCKET_FILL_COLORS, GAP_JOINER_WIDTH} from "../../constants";
 import RectPart from "./primitives/RectPart";
 
 

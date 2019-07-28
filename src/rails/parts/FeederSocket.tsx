@@ -8,7 +8,7 @@ import {
   FEEDER_SOCKET_HEIGHT,
   FEEDER_SOCKET_HIT_RADIUS,
   FEEDER_SOCKET_WIDTH
-} from "constants";
+} from "../../constants";
 import RectPart from "./primitives/RectPart";
 
 import PartGroup from "./primitives/PartGroup";

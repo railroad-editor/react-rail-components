@@ -1,6 +1,6 @@
 import * as React from "react";
 import ArcPart, {ArcDirection} from "./primitives/ArcPart";
-import {CURVED_TURNOUT_ANGLE_DEVIATION, RAIL_PART_WIDTH} from "constants";
+import {CURVED_TURNOUT_ANGLE_DEVIATION, RAIL_PART_WIDTH} from "../../constants";
 import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
 

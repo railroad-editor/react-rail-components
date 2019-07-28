@@ -1,6 +1,6 @@
 import * as React from "react";
 import RectPart from "./primitives/RectPart";
-import {RAIL_PART_WIDTH} from "constants";
+import {RAIL_PART_WIDTH} from "../../constants";
 import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
 import Gap from "./Gap";
