@@ -155,7 +155,7 @@ react-is@^16.8.1:
 
 "react-paper-bindings@https://github.com/railroad-editor/react-paper-bindings#dist":
   version "0.0.1"
-  resolved "https://github.com/railroad-editor/react-paper-bindings#ee1aba1a17a9d89c328f19239ecfd5b3cbdf6108"
+  resolved "https://github.com/railroad-editor/react-paper-bindings#bc0da6303894854ea846e762617dc7bd1ea5d496"
   dependencies:
     fbjs "^1.0.0"
     paper "^0.11.8"
