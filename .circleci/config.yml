@@ -13,7 +13,7 @@ jobs:
           fingerprints:
             - "06:40:d7:45:f1:59:0c:f4:b5:47:1f:c0:23:60:9e:36"
       - run:
-          name: merge develop into dist
+          name: merge master into dist
           command: |
             git config user.email "kota65535@gmail.com"
             git config user.name "Tomohiko Ozawa"
