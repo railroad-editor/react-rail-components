@@ -1,12 +1,12 @@
 import * as React from "react";
-import RectPart from "react-rail-components/lib/rails/parts/primitives//RectPart";
+import RectPart from "react-rail-components/lib/parts/primitives//RectPart";
 import {Point} from "paper";
 import {Tool, View} from "react-paper-bindings";
 import {createGridLines} from "common";
-import {Pivot} from "react-rail-components/lib/rails/parts/primitives//PartBase";
-import PartGroup from "react-rail-components/lib/rails/parts/primitives//PartGroup";
-import CirclePart from "react-rail-components/lib/rails/parts/primitives//CirclePart";
-import {pointsEqual} from "react-rail-components/lib/rails/utils";
+import {Pivot} from "react-rail-components/lib/parts/primitives//PartBase";
+import PartGroup from "react-rail-components/lib/parts/primitives//PartGroup";
+import CirclePart from "react-rail-components/lib/parts/primitives//CirclePart";
+import {pointsEqual} from "react-rail-components/lib/utils";
 import assert from "assert";
 
 export default class Case04 extends React.Component<any, any> {

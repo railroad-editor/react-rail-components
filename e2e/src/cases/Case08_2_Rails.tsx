@@ -1,8 +1,8 @@
 import * as React from "react";
 import {Point} from "paper";
 import {Tool, View} from "react-paper-bindings";
-import {DoubleStraightRail, DoubleCrossTurnout} from "react-rail-components"
 import {createGridLines} from "common";
+import {DoubleCrossTurnout, DoubleStraightRail} from "react-rail-components"
 // import DoubleCrossTurnout from "components/rails/DoubleCrossTurnout";
 // import DoubleStraightRail from "components/rails/DoubleStraightRail";
 // import {CurveRail} from "components/Rails/CurveRail";

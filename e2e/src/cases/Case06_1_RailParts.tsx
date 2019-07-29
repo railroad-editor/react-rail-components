@@ -2,12 +2,12 @@ import * as React from "react";
 import {Point} from "paper";
 import {View} from "react-paper-bindings";
 import {createGridLines} from "common";
-import StraightRailPart from "react-rail-components/lib/rails/parts/StraightRailPart";
-import CurveRailPart from "react-rail-components/lib/rails/parts/CurveRailPart";
-import {ArcDirection} from "react-rail-components/lib/rails/parts/primitives//ArcPart";
-import SimpleTurnoutRailPart from "react-rail-components/lib/rails/parts/SimpleTurnoutRailPart";
-import CurvedTurnoutRailPart from "react-rail-components/lib/rails/parts/CurvedTurnoutRailPart";
-import ThreeWayTurnoutRailPart from "react-rail-components/lib/rails/parts/ThreeWayTurnoutRailPart";
+import StraightRailPart from "react-rail-components/lib/parts/StraightRailPart";
+import CurveRailPart from "react-rail-components/lib/parts/CurveRailPart";
+import {ArcDirection} from "react-rail-components/lib/parts/primitives//ArcPart";
+import SimpleTurnoutRailPart from "react-rail-components/lib/parts/SimpleTurnoutRailPart";
+import CurvedTurnoutRailPart from "react-rail-components/lib/parts/CurvedTurnoutRailPart";
+import ThreeWayTurnoutRailPart from "react-rail-components/lib/parts/ThreeWayTurnoutRailPart";
 
 export default class Case05 extends React.Component<any, any> {
 

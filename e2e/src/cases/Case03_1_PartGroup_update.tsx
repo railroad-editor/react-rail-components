@@ -1,9 +1,9 @@
 import * as React from "react";
-import RectPart from "react-rail-components/lib/rails/parts/primitives//RectPart";
+import RectPart from "react-rail-components/lib/parts/primitives//RectPart";
 import {Point} from "paper";
 import {Tool, View} from "react-paper-bindings";
 import {createGridLines} from "common";
-import PartGroup from "react-rail-components/lib/rails/parts/primitives//PartGroup";
+import PartGroup from "react-rail-components/lib/parts/primitives//PartGroup";
 import assert from "assert";
 import {pointsEqual} from "utils";
 

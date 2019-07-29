@@ -1,11 +1,11 @@
 import * as React from "react";
-import RectPart from "react-rail-components/lib/rails/parts/primitives/RectPart";
+import RectPart from "react-rail-components/lib/parts/primitives/RectPart";
 import {Point} from "paper";
 import {View} from "react-paper-bindings";
 import {createGridLines} from "common";
-import {Pivot} from "react-rail-components/lib/rails/parts/primitives/PartBase";
-import PartGroup from "react-rail-components/lib/rails/parts/primitives/PartGroup";
-import ArcPart, {ArcDirection} from "react-rail-components/lib/rails/parts/primitives/ArcPart";
+import {Pivot} from "react-rail-components/lib/parts/primitives/PartBase";
+import PartGroup from "react-rail-components/lib/parts/primitives/PartGroup";
+import ArcPart, {ArcDirection} from "react-rail-components/lib/parts/primitives/ArcPart";
 
 export default class Case02 extends React.Component<any, any> {
 

@@ -2,10 +2,10 @@ import * as React from "react";
 import {Point} from "paper";
 import {Tool, View} from "react-paper-bindings";
 import {createGridLines} from "common";
-import StraightRailPart from "react-rail-components/lib/rails/parts/StraightRailPart";
-import CurveRailPart from "react-rail-components/lib/rails/parts/CurveRailPart";
-import {ArcDirection} from "react-rail-components/lib/rails/parts/primitives//ArcPart";
-import {pointsEqual} from "react-rail-components/lib/rails/utils";
+import StraightRailPart from "react-rail-components/lib/parts/StraightRailPart";
+import CurveRailPart from "react-rail-components/lib/parts/CurveRailPart";
+import {ArcDirection} from "react-rail-components/lib/parts/primitives//ArcPart";
+import {pointsEqual} from "react-rail-components/lib/utils";
 import assert from "assert";
 
 export default class Case05 extends React.Component<any, any> {

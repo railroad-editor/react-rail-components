@@ -2,8 +2,8 @@ import * as React from "react";
 import {Point} from "paper";
 import {View} from "react-paper-bindings";
 import {createGridLines} from "common";
-import {ArcDirection} from "react-rail-components/lib/rails/parts/primitives//ArcPart";
-import DoubleCurveRailPart from "react-rail-components/lib/rails/parts/DoubleCurveRailPart";
+import {ArcDirection} from "react-rail-components/lib/parts/primitives//ArcPart";
+import DoubleCurveRailPart from "react-rail-components/lib/parts/DoubleCurveRailPart";
 
 export default class Case05 extends React.Component<any, any> {
 

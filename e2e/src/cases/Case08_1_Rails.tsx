@@ -2,8 +2,8 @@ import * as React from "react";
 import {Point} from "paper";
 import {Tool, View} from "react-paper-bindings";
 import {createGridLines} from "common";
-import {ArcDirection} from "react-rail-components/lib/rails/parts/primitives/ArcPart";
-import {CurvedTurnout, CurveRail, SimpleTurnout, StraightRail, ThreeWayTurnout} from "react-rail-components"
+import {ArcDirection} from "react-rail-components/lib/parts/primitives/ArcPart";
+import {StraightRail, CurveRail, SimpleTurnout, ThreeWayTurnout, CurvedTurnout} from "react-rail-components"
 
 export default class Case08 extends React.Component<any, any> {
   r: any

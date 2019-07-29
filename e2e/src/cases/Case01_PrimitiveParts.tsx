@@ -1,12 +1,12 @@
 import * as React from "react";
 import {Point} from "paper";
 import {Tool, View} from "react-paper-bindings";
-import RectPart from "react-rail-components/lib/rails/parts/primitives/RectPart"
+import RectPart from "react-rail-components/lib/parts/primitives/RectPart"
 import {createGridLines} from "common";
-import {Pivot} from "react-rail-components/lib/rails/parts/primitives/PartBase";
-import CirclePart from "react-rail-components/lib/rails/parts/primitives/CirclePart";
-import ArcPart, {ArcDirection} from "react-rail-components/lib/rails/parts/primitives/ArcPart";
-import TrianglePart from "react-rail-components/lib/rails/parts/primitives/TrianglePart";
+import {Pivot} from "react-rail-components/lib/parts/primitives/PartBase";
+import CirclePart from "react-rail-components/lib/parts/primitives/CirclePart";
+import ArcPart, {ArcDirection} from "react-rail-components/lib/parts/primitives/ArcPart";
+import TrianglePart from "react-rail-components/lib/parts/primitives/TrianglePart";
 
 /**
  * position, angle, pivot がうまく動作しているかのテスト
