@@ -521,7 +521,7 @@ export abstract class RailBase<P extends RailBaseProps, S extends RailBaseState>
       showGap: showGap
     })
 
-    console.info(`rail ${this.props.id} render`)
+    console.debug(`rail ${this.props.id} render: ${JSON.stringify(this.props)}`)
 
     return (
       <>

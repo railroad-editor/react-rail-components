@@ -49,9 +49,7 @@ export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> 
   componentDidUpdate() {
     this.setPivotAndPosition()
 
-    console.trace(
-      `[PartGroup][${name}] update(): 
-      position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
+    console.debug(`[PartGroup][${this.props.name}]#update() position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
   }
 
   componentDidMount() {
@@ -59,9 +57,7 @@ export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> 
     this.setPivotAndPosition()
     this.setState({fixed: true})
 
-    console.trace(
-      `[PartGroup][${name}] mount(): 
-      position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
+    console.debug(`[PartGroup][${this.props.name}]#mount() position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
   }
 
   createPathData = (props) => {
@@ -98,7 +94,7 @@ export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> 
     position = this.props.position
     angle = this.props.angle
 
-    console.trace(`[PartGroup][${name}] render(): position=${position}, pivot=${pivotPoint}`)
+    console.debug(`[PartGroup][${this.props.name}]#render() position={x: ${position.x}, y: ${position.y}} angle=${angle}, pivot=${pivotPoint}`)
 
     return (
       <GroupComponent
