@@ -24,15 +24,7 @@ export default class Case04 extends React.Component<any, any> {
   }
 
   render() {
-    const matrix = {
-      sx: 0, // scale center x
-      sy: 0, // scale center y
-      tx: 0, // translate x
-      ty: 0, // translate y
-      x: 0,
-      y: 0,
-      zoom: 1
-    };
+
 
     /*
       Pivot指定なし＋PivotPart指定ありのパターン
@@ -41,8 +33,7 @@ export default class Case04 extends React.Component<any, any> {
     return (
       <View width={800}
             height={600}
-            matrix={matrix}
-            settings={{
+                        settings={{
               applyMatrix: false
             }}
       >

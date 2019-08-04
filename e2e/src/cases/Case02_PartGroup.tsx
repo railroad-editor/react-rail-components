@@ -10,16 +10,6 @@ import ArcPart, {ArcDirection} from "react-rail-components/lib/parts/primitives/
 export default class Case02 extends React.Component<any, any> {
 
   render() {
-    const matrix = {
-      sx: 0, // scale center x
-      sy: 0, // scale center y
-      tx: 0, // translate x
-      ty: 0, // translate y
-      x: 0,
-      y: 0,
-      zoom: 1
-    };
-
     let paths = [
       <RectPart
         position={new Point(200, 200)}
@@ -42,7 +32,6 @@ export default class Case02 extends React.Component<any, any> {
     return (
       <View width={800}
             height={800}
-            matrix={matrix}
             settings={{
               applyMatrix: false
             }}
