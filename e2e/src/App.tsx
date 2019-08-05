@@ -23,24 +23,24 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <Router>
-      <Route path="/tests/1" component={Case01}/>
-      <Route path="/tests/2" component={Case02}/>
-      <Route path="/tests/3_1" component={Case03_1}/>
-      <Route path="/tests/3_2" component={Case03_2}/>
-      <Route path="/tests/3_3" component={Case03_3}/>
-      <Route path="/tests/3_4" component={Case03_4}/>
-      <Route path="/tests/4_1" component={Case04_1}/>
-      <Route path="/tests/4_2" component={Case04_2}/>
-      <Route path="/tests/4_3" component={Case04_3}/>
-      <Route path="/tests/4_4" component={Case04_4}/>
-      <Route path="/tests/5_1" component={Case05_1}/>
-      <Route path="/tests/5_2" component={Case05_2}/>
-      <Route path="/tests/6_1" component={Case06_1}/>
-      <Route path="/tests/6_2" component={Case06_2}/>
-      <Route path="/tests/7_1" component={Case07_1}/>
-      <Route path="/tests/8_1" component={Case08_1}/>
-      <Route path="/tests/8_2" component={Case08_2}/>
-      <Route path="/tests/9" component={Case09}/>
+      <Route path="/1" component={Case01}/>
+      <Route path="/2" component={Case02}/>
+      <Route path="/3_1" component={Case03_1}/>
+      <Route path="/3_2" component={Case03_2}/>
+      <Route path="/3_3" component={Case03_3}/>
+      <Route path="/3_4" component={Case03_4}/>
+      <Route path="/4_1" component={Case04_1}/>
+      <Route path="/4_2" component={Case04_2}/>
+      <Route path="/4_3" component={Case04_3}/>
+      <Route path="/4_4" component={Case04_4}/>
+      <Route path="/5_1" component={Case05_1}/>
+      <Route path="/5_2" component={Case05_2}/>
+      <Route path="/6_1" component={Case06_1}/>
+      <Route path="/6_2" component={Case06_2}/>
+      <Route path="/7_1" component={Case07_1}/>
+      <Route path="/8_1" component={Case08_1}/>
+      <Route path="/8_2" component={Case08_2}/>
+      <Route path="/9" component={Case09}/>
     </Router>
   );
 }
