@@ -4,8 +4,6 @@ import {GAP_JOINER_HEIGHT, GAP_JOINER_SOCKET_FILL_COLORS, GAP_JOINER_WIDTH} from
 import RectPart from "./primitives/RectPart";
 
 
-
-
 interface GapJoinerProps extends Partial<DefaultProps> {
   id: number
 }

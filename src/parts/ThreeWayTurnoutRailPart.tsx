@@ -6,9 +6,6 @@ import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
 
 
-
-
-
 interface ThreeWayTurnoutRailPartProps extends RailPartBaseProps {
   length: number
   rightStart: number

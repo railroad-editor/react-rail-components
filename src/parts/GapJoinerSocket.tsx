@@ -11,7 +11,6 @@ import {
 import PartGroup from "./primitives/PartGroup";
 
 
-
 interface GapJoinerSocketProps extends Partial<DefaultProps> {
   name?: string
   data?: any

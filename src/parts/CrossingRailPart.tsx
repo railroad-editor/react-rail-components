@@ -5,8 +5,6 @@ import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
 
 
-
-
 interface CrossingRailPartProps extends RailPartBaseProps {
   length: number
   crossAngle: number

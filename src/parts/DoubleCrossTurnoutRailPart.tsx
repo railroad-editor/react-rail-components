@@ -8,7 +8,6 @@ import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailP
 import Gap from "./Gap";
 
 
-
 interface DoubleCrossTurnoutRailPartProps extends RailPartBaseProps {
   length: number
   centerAngle: number

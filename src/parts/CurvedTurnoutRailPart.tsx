@@ -7,7 +7,6 @@ import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailP
 import RectPart from "./primitives/RectPart";
 
 
-
 interface CurvedTurnoutRailPartProps extends RailPartBaseProps {
   innerRadius: number
   outerRadius: number

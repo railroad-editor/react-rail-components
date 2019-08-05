@@ -5,8 +5,6 @@ import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
 
 
-
-
 interface CurveRailPartProps extends RailPartBaseProps {
   radius: number
   centerAngle: number

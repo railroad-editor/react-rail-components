@@ -5,7 +5,6 @@ import {FEEDER_HEIGHT, FEEDER_SOCKET_FILL_COLORS, FEEDER_WIDTH} from "../constan
 import {FlowDirection, Pivot} from "./primitives/PartBase";
 
 
-
 interface FeederProps extends Partial<DefaultProps> {
   id: number
 }

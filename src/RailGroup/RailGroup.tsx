@@ -5,8 +5,6 @@ import {JointInfo, RailBase} from "../RailBase";
 import {Group, Point} from "paper";
 
 
-
-
 export interface RailGroupProps extends Partial<RailGroupDefaultProps> {
   position: Point2D
   angle: number

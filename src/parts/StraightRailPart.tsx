@@ -5,7 +5,6 @@ import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
 
 
-
 interface StraightRailPartProps extends RailPartBaseProps {
   length: number
 }

@@ -13,8 +13,6 @@ import {
 import RectPart from "./primitives/RectPart";
 
 
-
-
 interface JointProps extends Partial<DefaultProps> {
   name?: string
   data?: JointMeta

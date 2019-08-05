@@ -6,7 +6,6 @@ import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailP
 import Gap from "./Gap";
 
 
-
 interface GappedStraightRailPartProps extends RailPartBaseProps {
   length: number
 }

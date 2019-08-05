@@ -2,9 +2,6 @@ import * as React from "react";
 import {Point} from "paper";
 
 
-
-
-
 /**
  * Point同士を比較し、一致したらtrueを返す
  * @param p1 {Point}

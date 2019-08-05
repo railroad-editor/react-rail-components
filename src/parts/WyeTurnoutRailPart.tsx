@@ -5,9 +5,6 @@ import {Pivot} from "./primitives/PartBase";
 import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailPartBase";
 
 
-
-
-
 interface WyeTurnoutRailPartProps extends RailPartBaseProps {
   radius: number
   centerAngle: number

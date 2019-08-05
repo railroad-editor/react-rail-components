@@ -6,7 +6,6 @@ import RailPartBase, {RailPartBaseDefaultProps, RailPartBaseProps} from "./RailP
 import {ArcDirection, default as ArcPart} from "./primitives/ArcPart";
 
 
-
 interface DoubleCurveRailPartProps extends RailPartBaseProps {
   innerRadius: number
   outerRadius: number

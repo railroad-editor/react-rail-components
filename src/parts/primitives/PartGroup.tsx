@@ -4,9 +4,6 @@ import {Group as GroupComponent} from "react-paper-bindings";
 import PartBase, {PartBaseDefaultProps, PartBaseProps, Pivot} from "./PartBase";
 
 
-
-
-
 interface PartGroupProps extends PartBaseProps {
   pivotPartIndex?: number
 }

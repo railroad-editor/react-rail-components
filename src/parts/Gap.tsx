@@ -4,7 +4,6 @@ import RectPart from "./primitives/RectPart";
 import {GAP_FILL_COLOR, GAP_HEIGHT, GAP_WIDTH} from "../constants";
 
 
-
 interface GapProps extends Partial<DefaultProps> {
 }
 
