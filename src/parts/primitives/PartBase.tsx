@@ -28,15 +28,15 @@ export interface PartBaseProps extends Partial<PartBaseDefaultProps> {
   selected?: boolean
   name?: string
   data?: any
-  onMouseDown?: any
-  onMouseDrag?: any
-  onMouseUp?: any
-  onLeftClick?: any
-  onRightClick?: any
-  onDoubleClick?: any
-  onMouseMove?: any
-  onMouseEnter?: any
-  onMouseLeave?: any
+  onMouseDown?: (e: MouseEvent) => void
+  onMouseDrag?: (e: MouseEvent) => void
+  onMouseUp?: (e: MouseEvent) => void
+  onLeftClick?: (e: MouseEvent) => void
+  onRightClick?: (e: MouseEvent) => void
+  onDoubleClick?: (e: MouseEvent) => void
+  onMouseMove?: (e: MouseEvent) => void
+  onMouseEnter?: (e: MouseEvent) => void
+  onMouseLeave?: (e: MouseEvent) => void
 }
 
 export interface PartBaseDefaultProps {
@@ -107,7 +107,6 @@ export default abstract class PartBase<P extends PartBaseProps, S> extends React
    * @returns {number}
    */
   getAngleTo(item: Item, pivot: Pivot) {
-    // (this.path as any)._project._updateVersion += 1
     return (this.path.getMatrixTo(item).decompose() as any).rotation
   }
 
@@ -116,7 +115,6 @@ export default abstract class PartBase<P extends PartBaseProps, S> extends React
    * @param {Pivot} pivot
    */
   getGlobalAngle(pivot: Pivot) {
-    // (this.path as any)._project._updateVersion += 1
     return (this.path as any).getGlobalMatrix().decompose().rotation
   }
 
@@ -134,10 +132,6 @@ export default abstract class PartBase<P extends PartBaseProps, S> extends React
    * @param {Pivot} pivot
    */
   getPositionTo(item: Item, pivot: Pivot) {
-    // const p = this.path.localToOther(path, this.getInternalPivotPosition(pivot))
-    // console.log(path.position)
-    // console.log(p)
-    // (this.path as any)._project._updateVersion += 1
     return this.path.localToOther(item, this.getInternalPivotPosition(pivot))
   }
 
@@ -146,7 +140,6 @@ export default abstract class PartBase<P extends PartBaseProps, S> extends React
    * @param {Pivot} pivot
    */
   getGlobalPosition(pivot: Pivot) {
-    // This is a workaround of
     (this.path as any)._project._updateVersion += 1
     return this.path.localToGlobal(this.getInternalPivotPosition(pivot))
   }
