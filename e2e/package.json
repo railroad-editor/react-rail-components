@@ -22,7 +22,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "bash test.sh",
+    "nightwatch": "cd test && nightwatch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,6 +42,10 @@
     ]
   },
   "devDependencies": {
-    "module-alias": "^2.2.0"
+    "chromedriver": "^76.0.0",
+    "module-alias": "^2.2.0",
+    "nightwatch": "^1.1.13",
+    "node-resemble-js": "^0.2.0",
+    "selenium-server-standalone-jar": "^3.141.5"
   }
 }
