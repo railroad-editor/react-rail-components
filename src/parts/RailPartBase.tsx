@@ -19,9 +19,9 @@ export interface RailPartBaseProps extends Partial<RailPartBaseDefaultProps> {
   data?: RailPartMeta
   onLeftClick?: (e: MouseEvent) => boolean
   onRightClick?: (e: MouseEvent) => boolean
-  onMouseEnter?: (e: MouseEvent) => boolean
-  onMouseLeave?: (e: MouseEvent) => boolean
-  onMouseMove?: (e: MouseEvent) => boolean
+  onMouseEnter?: (e: MouseEvent) => void
+  onMouseLeave?: (e: MouseEvent) => void
+  onMouseMove?: (e: MouseEvent) => void
 
   pivotJointIndex?: number
 }

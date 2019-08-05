@@ -12,3 +12,4 @@ export * from "./StraightRail"
 export * from "./ThreeWayTurnout"
 export * from "./WyeTurnout"
 
+export * from "./RailBase"

@@ -108,9 +108,9 @@ export interface RailBaseDefaultProps {
   // イベントハンドラ
   onRailPartLeftClick: (e: MouseEvent) => boolean
   onRailPartRightClick: (e: MouseEvent) => boolean
-  onRailPartMouseEnter: (e: MouseEvent) => boolean
-  onRailPartMouseLeave: (e: MouseEvent) => boolean
-  onRailPartMouseMove: (e: MouseEvent) => boolean
+  onRailPartMouseEnter: (e: MouseEvent) => void
+  onRailPartMouseLeave: (e: MouseEvent) => void
+  onRailPartMouseMove: (e: MouseEvent) => void
 
   onJointLeftClick: (jointId: number, e: MouseEvent) => void
   onJointRightClick: (jointId: number, e: MouseEvent) => void
@@ -171,51 +171,35 @@ export abstract class RailBase<P extends RailBaseProps, S extends RailBaseState>
     showGap: true,
     showJoints: true,
 
+    // @formatter:off
     // 何もしないハンドラをセットしておく
     onRailPartLeftClick: (e: MouseEvent) => false,
     onRailPartRightClick: (e: MouseEvent) => false,
-    onRailPartMouseEnter: (e: MouseEvent) => false,
-    onRailPartMouseLeave: (e: MouseEvent) => false,
-    onRailPartMouseMove: (e: MouseEvent) => false,
+    onRailPartMouseEnter: (e: MouseEvent) => {},
+    onRailPartMouseLeave: (e: MouseEvent) => {},
+    onRailPartMouseMove: (e: MouseEvent) => {},
 
-    onJointLeftClick: (jointId: number, e: MouseEvent) => {
-    },
-    onJointRightClick: (jointId: number, e: MouseEvent) => {
-    },
-    onJointMouseMove: (jointId: number, e: MouseEvent) => {
-    },
-    onJointMouseEnter: (jointId: number, e: MouseEvent) => {
-    },
-    onJointMouseLeave: (jointId: number, e: MouseEvent) => {
-    },
+    onJointLeftClick: (jointId: number, e: MouseEvent) => {},
+    onJointRightClick: (jointId: number, e: MouseEvent) => {},
+    onJointMouseMove: (jointId: number, e: MouseEvent) => {},
+    onJointMouseEnter: (jointId: number, e: MouseEvent) => {},
+    onJointMouseLeave: (jointId: number, e: MouseEvent) => {},
 
-    onFeederSocketMouseEnter: (feederId: number, e: MouseEvent) => {
-    },
-    onFeederSocketMouseLeave: (feederId: number, e: MouseEvent) => {
-    },
-    onFeederSocketLeftClick: (feederId: number, e: MouseEvent) => {
-    },
-    onFeederSocketRightClick: (feederId: number, e: MouseEvent) => {
-    },
-    onFeederMouseEnter: (id: number, e: MouseEvent) => {
-    },
-    onFeederMouseLeave: (id: number, e: MouseEvent) => {
-    },
-    onFeederLeftClick: (id: number, e: MouseEvent) => {
-    },
+    onFeederSocketMouseEnter: (feederId: number, e: MouseEvent) => {},
+    onFeederSocketMouseLeave: (feederId: number, e: MouseEvent) => {},
+    onFeederSocketLeftClick: (feederId: number, e: MouseEvent) => {},
+    onFeederSocketRightClick: (feederId: number, e: MouseEvent) => {},
+    onFeederMouseEnter: (id: number, e: MouseEvent) => {},
+    onFeederMouseLeave: (id: number, e: MouseEvent) => {},
+    onFeederLeftClick: (id: number, e: MouseEvent) => {},
 
-    onGapJoinerSocketMouseEnter: (feederId: number, e: MouseEvent) => {
-    },
-    onGapJoinerSocketMouseLeave: (feederId: number, e: MouseEvent) => {
-    },
-    onGapJoinerSocketLeftClick: (feederId: number, e: MouseEvent) => {
-    },
-    onGapJoinerMouseEnter: (id: number, e: MouseEvent) => {
-    },
-    onGapJoinerMouseLeave: (id: number, e: MouseEvent) => {
-    },
-    onGapJoinerLeftClick: (id: number, e: MouseEvent) => {
-    },
+    onGapJoinerSocketMouseEnter: (feederId: number, e: MouseEvent) => {},
+    onGapJoinerSocketMouseLeave: (feederId: number, e: MouseEvent) => {},
+    onGapJoinerSocketLeftClick: (feederId: number, e: MouseEvent) => {},
+    onGapJoinerMouseEnter: (id: number, e: MouseEvent) => {},
+    onGapJoinerMouseLeave: (id: number, e: MouseEvent) => {},
+    onGapJoinerLeftClick: (id: number, e: MouseEvent) => {},
+    // @formatter:on
   }
 
   railPart: RailPartBase<any, any>
