@@ -67,18 +67,18 @@ export default abstract class RailPartBase<P extends RailPartBaseProps, S> exten
   }
 
   componentDidUpdate() {
-    console.debug('[RailPart] updated')
+    // console.debug('[RailPart] updated')
     _.range(this.joints.length).forEach(i => {
-      console.debug(`[RailPart][${this.props.name}] j${i}: ${this.getGlobalJointPosition(i)}, ${this.getGlobalJointAngle(i)}`);
+      // console.debug(`[RailPart][${this.props.name}] j${i}: ${this.getGlobalJointPosition(i)}, ${this.getGlobalJointAngle(i)}`);
     })
     this.fixRotationByPivot()
     this.setGapColor()
   }
 
   componentDidMount() {
-    console.debug('[RailPart] mounted')
+    // console.debug('[RailPart] mounted')
     _.range(this.joints.length).forEach(i => {
-      console.debug(`[RailPart][${this.props.name}] j${i}: ${this.getGlobalJointPosition(i)}, ${this.getGlobalJointAngle(i)}`);
+      // console.debug(`[RailPart][${this.props.name}] j${i}: ${this.getGlobalJointPosition(i)}, ${this.getGlobalJointAngle(i)}`);
     })
     this.fixRotationByPivot()
     this.setGapColor()

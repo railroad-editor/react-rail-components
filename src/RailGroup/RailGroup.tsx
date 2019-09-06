@@ -52,7 +52,7 @@ export default class RailGroup extends React.Component<RailGroupProps, {}> {
 
 
   private setInternal() {
-    console.debug('RailGroup#setInternal', this.group, this.group ? this.group.children : '')
+    // console.debug('RailGroup#setInternal', this.group, this.group ? this.group.children : '')
     if (this.group.children.length > 0) {
       this.group.pivot = this.getPivotPosition()
       this.group.position = new Point(this.props.position)
@@ -78,7 +78,7 @@ export default class RailGroup extends React.Component<RailGroupProps, {}> {
     const pivotPosition = this.getPivotPosition()
     const groupAngle = this.getAngle()
 
-    console.debug('RailGroup#render', this.group, children, angle, pivotPosition, groupAngle)
+    // console.debug('RailGroup#render', this.group, children, angle, pivotPosition, groupAngle)
 
     return (
       <GroupComponent
