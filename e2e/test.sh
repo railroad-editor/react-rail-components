@@ -23,7 +23,6 @@ exec 3<&-
 
 # Start test if server started successfully
 if $server_started; then
-    yarn test
     cd test && nightwatch
     kill $(lsof -ti:3000)
     exit 0
