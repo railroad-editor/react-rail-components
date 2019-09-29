@@ -137,13 +137,13 @@ export default class DetectablePart extends React.Component<DetectablePartProps,
   }
 
   get mainPart() {
-    return this._partGroup._children[0]
+    return this._partGroup.children[0]
   }
 
   // ========== Private methods ==========
 
   get detectionPart() {
-    return this._partGroup._children[1]
+    return this._partGroup.children[1]
   }
 
   get position() {
