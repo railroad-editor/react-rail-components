@@ -115,7 +115,7 @@ object-assign@^4.1.0, object-assign@^4.1.1:
 
 "paper@https://github.com/railroad-editor/paper.js#dist":
   version "0.12.3"
-  resolved "https://github.com/railroad-editor/paper.js#76fe626a361a50a314977db832c0719704a9041b"
+  resolved "https://github.com/railroad-editor/paper.js#08487c8696a983f20755b78d46948cf5d7fe8a99"
 
 promise@^7.1.1:
   version "7.3.1"
@@ -160,7 +160,7 @@ react-is@^16.8.1:
 
 "react-paper-bindings@https://github.com/railroad-editor/react-paper-bindings#dist":
   version "0.0.1"
-  resolved "https://github.com/railroad-editor/react-paper-bindings#273aef78ae473d49854d56ec91402fede82d1a6b"
+  resolved "https://github.com/railroad-editor/react-paper-bindings#a5eb560a34560f214c9f8b0ef6083fa3c331fa7c"
   dependencies:
     fbjs "^1.0.0"
     paper "https://github.com/railroad-editor/paper.js#dist"
