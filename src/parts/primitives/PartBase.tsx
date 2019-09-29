@@ -68,12 +68,12 @@ export default abstract class PartBase<P extends PartBaseProps, S> extends React
     super(props)
   }
 
-  protected _path: Path | Group
+  protected _ref: Path | Group
 
   // ========== Public APIs ==========
 
   get path() {
-    return this._path
+    return this._ref
   }
 
   get position() {
@@ -115,7 +115,7 @@ export default abstract class PartBase<P extends PartBaseProps, S> extends React
    * @param {Pivot} pivot
    */
   getGlobalAngle(pivot: Pivot) {
-    return (this.path as any).getGlobalMatrix().decompose().rotation
+    return this.path.getGlobalMatrix().decompose().rotation
   }
 
   /**
@@ -243,7 +243,7 @@ export default abstract class PartBase<P extends PartBaseProps, S> extends React
   }
 
   protected getRef = (ref) => {
-    if (ref) this._path = ref
+    if (ref) this._ref = ref
   }
 
 }

@@ -2,17 +2,14 @@ import * as React from "react";
 import {Point} from "paper";
 import {Group as GroupComponent} from "react-paper-bindings";
 import PartBase, {PartBaseDefaultProps, PartBaseProps, Pivot} from "./PartBase";
+import {log} from "../../logging";
 
 
 interface PartGroupProps extends PartBaseProps {
   pivotPartIndex?: number
 }
 
-interface PartGroupState {
-  fixed: boolean
-}
-
-export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> {
+export default class PartGroup extends PartBase<PartGroupProps, {}> {
   public static defaultProps: PartBaseDefaultProps = {
     position: {x: 0, y: 0},
     angle: 0,
@@ -23,15 +20,13 @@ export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> 
     selected: false,
   }
 
+  private _children: PartBase<any, any>[]
+  private _isMounted = false
+
   constructor(props: PartGroupProps) {
     super(props)
-    this.state = {
-      fixed: false
-    }
     this._children = this.props.children ? new Array((this.props.children as any[]).length) : []
   }
-
-  _children: PartBase<any, any>[]
 
   // ========== Public APIs ==========
 
@@ -40,21 +35,19 @@ export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> 
   }
 
   get group() {
-    return this._path
+    return this._ref
   }
 
   componentDidUpdate() {
     this.setPivotAndPosition()
-
-    // console.debug(`[PartGroup][${this.props.name}]#update() position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
+    log(`[react-rail-components][PartGroup][${this.props.name}]#update() position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
   }
 
   componentDidMount() {
+    this._isMounted = true
     // PivotまたはPivotPartの指定がある場合、ここでPivot位置を確定させて再描画する
     this.setPivotAndPosition()
-    this.setState({fixed: true})
-
-    // console.debug(`[PartGroup][${this.props.name}]#mount() position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
+    log(`[react-rail-components][PartGroup][${this.props.name}]#mount() position=${this.group.position}, pivot=${this.group.pivot}, bounds=${this.group.bounds}`)
   }
 
   createPathData = (props) => {
@@ -63,7 +56,7 @@ export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> 
 
   render() {
     const {
-      pivot, fillColor, visible, opacity, selected, name, data,
+      position, angle, pivot, fillColor, visible, opacity, selected, name, data,
       onMouseDown, onMouseDrag, onMouseUp, onDoubleClick, onMouseMove, onMouseEnter, onMouseLeave
     } = this.props
 
@@ -84,14 +77,12 @@ export default class PartGroup extends PartBase<PartGroupProps, PartGroupState> 
 
     // 最初のrenderが呼ばれた時点ではまだ子が描画されていないので、Pivotの位置を確定できない
     // componentDidMountが呼ばれたらPivotを計算して再描画する
-    let pivotPoint, position, angle
-    if (this.props.pivotPartIndex != null && this.state.fixed) {
+    let pivotPoint = undefined
+    if (this._isMounted) {
       pivotPoint = this.getInternalPivotPosition(pivot)
     }
-    position = this.props.position
-    angle = this.props.angle
 
-    // console.debug(`[PartGroup][${this.props.name}]#render() position={x: ${position.x}, y: ${position.y}} angle=${angle}, pivot=${pivotPoint}`)
+    log(`[react-rail-components][PartGroup][${this.props.name}]#render() position={x: ${position.x}, y: ${position.y}} angle=${angle}, pivot=${pivotPoint}`)
 
     return (
       <GroupComponent
