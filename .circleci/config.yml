@@ -24,6 +24,10 @@ jobs:
             npm install
             npm run build
       - run:
+          name: add lib folder to git
+          command: |
+            sed -i -e '/\/lib/d' .gitignore
+      - run:
           name: commit & push new dist branch
           command: |
             git add . --all
