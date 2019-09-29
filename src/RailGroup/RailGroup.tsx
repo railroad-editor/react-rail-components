@@ -3,6 +3,7 @@ import {Group as GroupComponent} from "react-paper-bindings";
 
 import {JointInfo, RailBase} from "../RailBase";
 import {Group, Point} from "paper";
+import {log} from "../logging";
 
 
 export interface RailGroupProps extends Partial<RailGroupDefaultProps> {
@@ -52,7 +53,7 @@ export default class RailGroup extends React.Component<RailGroupProps, {}> {
 
 
   private setInternal() {
-    // console.debug('RailGroup#setInternal', this.group, this.group ? this.group.children : '')
+    log('[RailGroup]#setInternal()', this.group, this.group ? this.group.children : '')
     if (this.group.children.length > 0) {
       this.group.pivot = this.getPivotPosition()
       this.group.position = new Point(this.props.position)
