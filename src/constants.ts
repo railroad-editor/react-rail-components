@@ -25,13 +25,13 @@ export const FEEDER_HEIGHT = 26
 export const FEEDER_SOCKET_WIDTH = RAIL_PART_WIDTH
 export const FEEDER_SOCKET_HEIGHT = 6
 export const FEEDER_SOCKET_HIT_RADIUS = 16
-export const FEEDER_SOCKET_DETECTION_OPACITY_RATE = 0.5
+export const FEEDER_SOCKET_DETECTION_OPACITY_RATE = 0.4
 export const FEEDER_SOCKET_FILL_COLORS = ['green', 'green', 'deepskyblue', 'green']
 
 // Gap Joiner
 export const GAP_JOINER_WIDTH = 28
 export const GAP_JOINER_HEIGHT = 12
 export const GAP_JOINER_SOCKET_HIT_RADIUS = 16
-export const GAP_JOINER_SOCKET_DETECTION_OPACITY_RATE = 0.5
+export const GAP_JOINER_SOCKET_DETECTION_OPACITY_RATE = 0.4
 export const GAP_JOINER_SOCKET_FILL_COLORS = ['red', 'red', 'deepskyblue', 'red']
 

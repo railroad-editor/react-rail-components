@@ -6,7 +6,6 @@ import {normAngle} from "../utils";
 import {FlowDirections} from "../RailBase";
 import PartGroup from "./primitives/PartGroup";
 import {RAIL_PART_WIDTH} from "../constants";
-import * as _ from "lodash";
 
 
 export interface PivotInfo {
@@ -68,18 +67,18 @@ export default abstract class RailPartBase<P extends RailPartBaseProps, S> exten
 
   componentDidUpdate() {
     // console.debug('[RailPart] updated')
-    _.range(this.joints.length).forEach(i => {
-      // console.debug(`[RailPart][${this.props.name}] j${i}: ${this.getGlobalJointPosition(i)}, ${this.getGlobalJointAngle(i)}`);
-    })
+    // _.range(this.joints.length).forEach(i => {
+    //   console.debug(`[RailPart][${this.props.name}] j${i}: ${this.getGlobalJointPosition(i)}, ${this.getGlobalJointAngle(i)}`);
+    // })
     this.fixRotationByPivot()
     this.setGapColor()
   }
 
   componentDidMount() {
     // console.debug('[RailPart] mounted')
-    _.range(this.joints.length).forEach(i => {
+    // _.range(this.joints.length).forEach(i => {
       // console.debug(`[RailPart][${this.props.name}] j${i}: ${this.getGlobalJointPosition(i)}, ${this.getGlobalJointAngle(i)}`);
-    })
+    // })
     this.fixRotationByPivot()
     this.setGapColor()
   }

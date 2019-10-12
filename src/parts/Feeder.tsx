@@ -1,12 +1,21 @@
 import * as React from "react";
 
 import TrianglePart from "./primitives/TrianglePart";
-import {FEEDER_HEIGHT, FEEDER_SOCKET_FILL_COLORS, FEEDER_WIDTH} from "../constants";
+import {
+  FEEDER_HEIGHT,
+  FEEDER_SOCKET_FILL_COLORS,
+  FEEDER_SOCKET_HEIGHT,
+  FEEDER_SOCKET_WIDTH,
+  FEEDER_WIDTH,
+} from "../constants";
 import {FlowDirection, Pivot} from "./primitives/PartBase";
+import RectPart from "./primitives/RectPart";
+import PartGroup from "./primitives/PartGroup";
 
 
 interface FeederProps extends Partial<DefaultProps> {
   id: number
+  pivot?: Pivot
 }
 
 interface DefaultProps {
@@ -34,7 +43,7 @@ export default class Feeder extends React.Component<FeederProps, {}> {
     fillColor: FEEDER_SOCKET_FILL_COLORS[0]
   }
 
-  part: TrianglePart
+  part: PartGroup
 
   constructor(props: FeederProps) {
     super(props)
@@ -57,18 +66,17 @@ export default class Feeder extends React.Component<FeederProps, {}> {
   }
 
   render() {
-    const {position, opacity, fillColor, visible, selected, data, onLeftClick, onMouseEnter, onMouseLeave} = this.props
+    const {position, pivot, opacity, fillColor, visible, selected, data, onLeftClick, onMouseEnter, onMouseLeave} = this.props
     const angle = this.getAngle()
 
     return (
-      <TrianglePart
+      <PartGroup
         position={{x: position.x, y: position.y}}
+        pivotPartIndex={0}
         angle={angle}
-        width={FEEDER_WIDTH}
-        height={FEEDER_HEIGHT}
-        fillColor={fillColor}
         opacity={opacity}
-        pivot={Pivot.TOP}
+        pivot={pivot ? pivot : Pivot.CENTER}
+        fillColor={fillColor}
         visible={visible}
         selected={selected}
         data={data}
@@ -78,7 +86,17 @@ export default class Feeder extends React.Component<FeederProps, {}> {
         ref={(r) => {
           if (r) this.part = r
         }}
-      />
+      >
+        <RectPart
+          width={FEEDER_SOCKET_WIDTH}
+          height={FEEDER_SOCKET_HEIGHT}
+        />
+        <TrianglePart
+          width={FEEDER_WIDTH}
+          height={FEEDER_HEIGHT}
+          pivot={Pivot.TOP}
+        />
+      </PartGroup>
     )
   }
 }

@@ -8,6 +8,7 @@ import {ArcDirection} from "react-rail-components/lib/parts/primitives//ArcPart"
 import SimpleTurnoutRailPart from "react-rail-components/lib/parts/SimpleTurnoutRailPart";
 import CurvedTurnoutRailPart from "react-rail-components/lib/parts/CurvedTurnoutRailPart";
 import ThreeWayTurnoutRailPart from "react-rail-components/lib/parts/ThreeWayTurnoutRailPart";
+import Feeder from "react-rail-components/lib/parts/Feeder";
 
 export default class Case05 extends React.Component<any, any> {
 
@@ -26,6 +27,11 @@ export default class Case05 extends React.Component<any, any> {
       >
         {createGridLines(800, 600, 100)}
 
+        <Feeder
+          id={0}
+          position={{x: 100, y:100}}
+          // pivot={Pivot.TOP}
+        />
         <StraightRailPart
           pivotJointIndex={0}
           angle={30}

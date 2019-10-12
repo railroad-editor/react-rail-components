@@ -52,6 +52,7 @@ export default class DetectablePart extends React.Component<DetectablePartProps,
       }
     }
   }
+
   onMouseEnter = (e: MouseEvent) => {
     // 検出前状態なら検出中状態に移行し、コールバックを呼んでやる
     if (this.isBeforeDetect()) {
@@ -65,7 +66,6 @@ export default class DetectablePart extends React.Component<DetectablePartProps,
     }
   }
 
-  // ========== Public APIs ==========
   onMouseLeave = (e: MouseEvent) => {
     // 検出中状態なら検出前状態に移行し、コールバックを呼んでやる
     if (this.isDetecting()) {
