@@ -14,6 +14,8 @@ interface GappedStraightRailPartProps extends RailPartBaseProps {
 export default class GappedStraightRailPart extends RailPartBase<GappedStraightRailPartProps, {}> {
   public static defaultProps: RailPartBaseDefaultProps = RailPartBase.defaultProps
 
+  private _gap: Gap
+
   constructor(props: GappedStraightRailPartProps) {
     super(props)
   }
@@ -34,6 +36,15 @@ export default class GappedStraightRailPart extends RailPartBase<GappedStraightR
     return [0, 1]
   }
 
+  componentDidUpdate() {
+    this._gap.path.bringToFront()
+    super.componentDidUpdate();
+  }
+
+  componentDidMount() {
+    this._gap.path.bringToFront()
+    super.componentDidMount()
+  }
 
   renderParts = () => {
     const {length, fillColor, flowDirections, showGap} = this.props
@@ -67,8 +78,13 @@ export default class GappedStraightRailPart extends RailPartBase<GappedStraightR
           data={{
             type: 'Gap',
           }}
+          ref={this.getGapRef}
         />
       </>
     )
+  }
+
+  getGapRef = (ref) => {
+    if (ref) this._gap = ref
   }
 }
