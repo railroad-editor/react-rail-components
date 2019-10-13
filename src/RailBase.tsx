@@ -8,6 +8,7 @@ import {FlowDirection, Pivot} from "./parts/primitives/PartBase";
 import GapJoiner from "./parts/GapJoiner";
 import Feeder from "./parts/Feeder";
 import GapJoinerSocket from "./parts/GapJoinerSocket";
+import {log} from "./logging";
 
 
 export interface JointInfo {
@@ -252,7 +253,7 @@ export abstract class RailBase<P extends RailBaseProps, S extends RailBaseState>
     }
 
     this.bringToFrontConductiveParts()
-    console.info(`Rail ${this.props.id} mounted.`) //`
+    log(`Rail ${this.props.id} mounted.`) //`
   }
 
   bringToFrontConductiveParts = () => {
